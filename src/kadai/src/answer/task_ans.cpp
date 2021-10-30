@@ -45,6 +45,8 @@ int main(int argc, char **argv)
             answer = 170;//身長
         }else if(box == 2){
             answer = 3;
+        }else{
+            answer = 0;
         }
         ROS_INFO("%f", answer);
         loop_rate.sleep();
