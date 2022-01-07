@@ -1,0 +1,4 @@
+<launch>
+  <node name="JK_Park_pub" pkg="kadai" type="JK_Park_pub"/>
+  <node name="JK_Park_sub" pkg="kadai" type="JK_Park_sub" output="screen"/>
+</launch>

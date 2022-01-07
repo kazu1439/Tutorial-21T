@@ -204,3 +204,17 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+include_directories(include ${catkin_INCLUDE_DIRS})
+
+add_executable(task_ans src/answer/task_ans.cpp)
+target_link_libraries(task_ans ${catkin_LIBRARIES})
+
+add_executable(task_q src/answer/task_q.cpp)
+target_link_libraries(task_q ${catkin_LIBRARIES})
+
+add_executable(JK_Park_sub src/JK_Park_sub.cpp)
+target_link_libraries(JK_Park_sub ${catkin_LIBRARIES})
+
+add_executable(JK_Park_pub src/JK_Park_pub.cpp)
+target_link_libraries(JK_Park_pub ${catkin_LIBRARIES})
