@@ -23,13 +23,10 @@ float t = 0.2;
 
 float set_var_x = 0.0f;     //目標値
 float pro_var_x = 0.0f;     //計測値
-float man_var_x = 0.0f;     //操作値
 float set_var_y = 0.0f;     //目標値
 float pro_var_y = 0.0f;     //計測値
-float man_var_y = 0.0f;     //操作値
 float set_var_theta = 0.0f; //目標値
 float pro_var_theta = 0.0f; //計測値
-float man_var_theta = 0.0f; //操作値
 float e_x = 0.0f;           //偏差
 float e_y = 0.0f;           //偏差
 float e_theta = 0.0f;       //偏差
