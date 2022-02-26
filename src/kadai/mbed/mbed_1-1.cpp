@@ -47,7 +47,7 @@ int main()
         SW.read()で今のスイッチの状態を見ている0:押された1:押されてない
         swPrevStatusで直前のスイッチの状態を見ている。これがないと例えば
         if(SW.read())のみだけだとスイッチが押されている間ずっとif文の中が実行され0と1が高速で切り替わってします
-        そこでswPrevStatusを入れることでスイッチを押して、スイッチを離した瞬間のみだけif文を実行している
+        そこでswPrevStatusを入れることでスイッチを押した瞬間のみだけif文を実行している
         */
         swPrevStatus = SW.read();//一つ前のスイッチの状態を記憶
         led1 = ledOutput;        //led1に出力の値を入れている,0:LED OFF,1:LED ON
