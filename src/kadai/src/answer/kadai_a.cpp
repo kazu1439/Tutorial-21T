@@ -58,7 +58,7 @@ int main(int argc, char **argv)
 
     ros::Publisher pub_int_msg = n.advertise<std_msgs::Int32MultiArray>("three_msg", 100);
     //ros::Publisher インスタンス名 = n.advertise<送りたい変数の型>("トピック名", 100);
-    // ＝ の次にあるnは47行目で決めたやつもし47行目でros::NodeHandle nh;と書かれて居たらnがnhになるだけ
+    // ＝ の次にあるnは55行目で決めたやつもし55行目でros::NodeHandle nh;と書かれて居たらnがnhになるだけ
     //一番最後の100は多分何でもいい、コピペ元を参考にしよう
 
     ros::Rate loop_rate(1 / CTRL_PERIOD);
@@ -90,7 +90,7 @@ int main(int argc, char **argv)
 
         pub_int_msg.publish(msg_int);
         //ここでは実際に宣言した変数のpublishを実行している
-        //50行目で決めたインスタンス名.publish(送りたい変数のインスタンス名);
+        //59行目で決めたインスタンス名.publish(送りたい変数のインスタンス名);
 
         loop_rate.sleep();
         //定めた制御周期を実行している
