@@ -48,7 +48,7 @@ Main
 
 int main(int argc, char **argv)
 {
-    ros::init(argc, argv, "task_a");
+    ros::init(argc, argv, "pub");
     //ここは理解せずコピペでいい、俺も理解してない
     //task_aはファイル名.cppのファイル名のところを一応入力
 
