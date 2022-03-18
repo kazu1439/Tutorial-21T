@@ -2,7 +2,7 @@
 3つの配列を受け取るプログラム
 大渕大地
 
-task_aで説明している所は省いた
+pub.cppで説明している所は省いた
 **********************************/
 /**********************************************************************
 Include Libraries
@@ -38,7 +38,7 @@ Main
 
 int main(int argc, char **argv)
 {
-    ros::init(argc, argv, "task_b");
+    ros::init(argc, argv, "sub");
     ros::NodeHandle n;
 
     ros::Subscriber sub_msg_int = n.subscribe("three_msg", 100, cb_msg_int);
