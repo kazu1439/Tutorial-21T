@@ -1,0 +1,5 @@
+<launch>
+  <node name="kadai2_pub" pkg="kadai" type="kadai2_pub" />  //name이랑 type는 같은 이름이여야함
+  <node name="kadai2_sub" pkg="kadai" type="kadai2_sub" output="screen"/>
+  <!-- output="screen"と付けることでroslaunchをしたターミナルでROS_INFOを表示させることができる。 -->
+</launch>

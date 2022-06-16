@@ -204,3 +204,23 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+add_executable(kadai1pub src/kadai1pub.cpp)
+target_link_libraries(kadai1pub ${catkin_LIBRARIES})
+
+
+add_executable(kadai1sub src/kadai1sub.cpp)
+target_link_libraries(kadai1sub ${catkin_LIBRARIES})
+
+add_executable(shukudai1_1pub src/shukudai1_1pub.cpp) 
+##컨트롤이랑 d누르면됨
+target_link_libraries(shukudai1_1pub ${catkin_LIBRARIES})
+
+add_executable(shukudai1_1sub src/shukudai1_1sub.cpp)
+target_link_libraries(shukudai1_1sub ${catkin_LIBRARIES})
+
+add_executable(kadai2_pub src/kadai2_pub.cpp)
+target_link_libraries(kadai2_pub ${catkin_LIBRARIES})
+
+add_executable(kadai2_sub src/kadai2_sub.cpp)
+target_link_libraries(kadai2_sub ${catkin_LIBRARIES})
